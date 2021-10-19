@@ -32,7 +32,6 @@ def url_request_get(url, parameters, api, method, loglevel):
         req = requests.get(url)
 
     parsed = json.loads(req.text)
-#    print (json.dumps(parsed, indent=4, sort_keys=True))
     return parsed
 
 def url_request_head(url, parameters, api, method, loglevel):
@@ -118,7 +117,6 @@ def bittrex_api(command, parameters, api, method, loglevel):
     url = "https://api.bittrex.com/v3/" + str(command)
     logmessage ("bittrex_api Exec request \"" + url + "\"...", loglevel);
     result = url_request(url, parameters, api, method, loglevel);
-#    logmessage ("bittrex_api Response code: " + str(result), loglevel);
     return result
 
 def get_account(api, addPath, loglevel):
