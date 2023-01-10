@@ -16,8 +16,6 @@ Working with the software product implies a basic understanding of the basics of
 # How to use
 
 ```
-sudo apt update
-sudo apt upgrade
 git clone https://github.com/dream-hunter/bittrex-rest-api-py.git
 cd bittrex-rest-api-py
 python3 APIv3sample.py
@@ -36,6 +34,9 @@ ETH: 0xda1be63336b49e25201d2f406f01b1989f6146c1
  3. Improving stability and performance
 
 # Update log
+
+**2023/01/10**
+ Following bittrex api changelog for 01/19/2022 added "GET /account/fees/fiat" method in APIv3sample.py (example) updates into main library are not required.
 
 **2021/10/19**
  Project created

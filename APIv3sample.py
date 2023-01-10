@@ -39,6 +39,14 @@ api = {'apikey' : '', 'apisecret' : ''}
 #result = BittrexAPIv3.get_account(api, None, loglevel)
 #print (json.dumps(result, indent=4, sort_keys=True))
 #
+#GET /account/fees/fiat
+#result = BittrexAPIv3.get_account(api, "fees/fiat", loglevel);
+#print (json.dumps(result, indent=4, sort_keys=True))
+#
+#GET /account/fees/fiat/{currencySymbol}
+#result = BittrexAPIv3.get_account(api, "fees/fiat/" + currencySymbol, loglevel);
+#print (json.dumps(result, indent=4, sort_keys=True))
+#
 #GET /account/fees/trading
 #result = BittrexAPIv3.get_account(api, "fees/trading", loglevel);
 #print (json.dumps(result, indent=4, sort_keys=True))
